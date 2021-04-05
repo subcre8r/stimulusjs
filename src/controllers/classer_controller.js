@@ -3,10 +3,10 @@ export default class extends Controller {
   static targets = ["output"]
 
   insert() {
-    this.elementTargets.forEach((element, index) => {
-      let classes = element.dataset.class.split(" ")
+    this.outputTargets.forEach((op, index) => {
+      let classes = op.dataset.class.split(" ")
       classes.forEach((c, index) => {
-        element.classList.toggle(c)
+        op.classList.toggle(c)
       })
     })
   }
