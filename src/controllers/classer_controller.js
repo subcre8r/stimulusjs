@@ -1,8 +1,8 @@
 import { Controller } from "stimulus"
 export default class extends Controller {
-  static targets = ["element"]
+  static targets = ["output"]
 
-  go() {
+  insert() {
     this.elementTargets.forEach((element, index) => {
       let classes = element.dataset.class.split(" ")
       classes.forEach((c, index) => {
