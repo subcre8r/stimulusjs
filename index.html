@@ -6,7 +6,8 @@
     <script src="./dist/stimulus.min.js"></script>
   </head>
   <body class="m-12">
-    <div data-controller="hello classer">
+
+    <div class="bg-red-50 h-screen" data-controller="hello classer">
       <button data-classer-target="output" data-class="scale-105" class="border rounded p-4 text-red-500 transition transform" data-action="click->hello#greet click->classer#insert">
         Greet
       </button>
@@ -21,6 +22,10 @@
 
         <button class="border p-3 rounded" data-action="click->copy-text#copy">copy</button>
       </div>
+    </div>
+
+    <div class="m-20" data-controller="classer-inview">
+      <div data-classer-inview-target="output" data-class="text-green-500" class="text-red-500 transition transform">Hey</div>
     </div>
   </body>
 </html>
