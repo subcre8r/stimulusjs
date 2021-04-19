@@ -8,6 +8,7 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
     "babel-loader": "^8.2.2",
+    "liquidjs": "^9.23.4",
     "stimulus": "^2.0.0",
     "webpack": "^5.30.0",
     "webpack-cli": "^4.6.0"

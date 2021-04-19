@@ -3,9 +3,27 @@
   <head>
     <title>Playground</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/subcre8r/tailwind/css-dist/tailwind.min.css">
+    <script>
+      var data = {
+      "name": "liquid",
+      "test": [
+        "hey",
+        "world",
+        "foo",
+        "bar"
+      ]
+    };
+    </script>
     <script src="./dist/stimulus.min.js"></script>
   </head>
   <body class="m-12">
+
+    <div data-controller="liquid">
+      <div class="" data-liquid-target="input">
+        <h1 class="text-xl">what up {{test[3]}}</h1>
+      </div>
+      <div data-liquid-target="output"></div>
+    </div>
 
     <div class="bg-red-50 h-screen" data-controller="hello classer">
       <button data-classer-target="output" data-class="scale-105" class="border rounded p-4 text-red-500 transition transform" data-action="click->hello#greet click->classer#insert">
