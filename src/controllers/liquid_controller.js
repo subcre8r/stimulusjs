@@ -10,7 +10,7 @@ export default class extends Controller {
     this.inputTarget.style.display = "none";
 
     engine
-      .parseAndRender(this.inputTarget.innerHTML, data)
+      .parseAndRender(this.inputTarget.innerHTML, liquid_data)
       .then(html => this.outputTarget.innerHTML = html)
   }
 }
