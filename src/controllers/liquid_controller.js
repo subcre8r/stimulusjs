@@ -3,14 +3,11 @@ import { Controller } from "stimulus"
 import { Liquid } from 'liquidjs';
 
 export default class extends Controller {
-  static targets = [ "input", "output" ]
-
   connect() {
     const engine = new Liquid();
-    this.inputTarget.style.display = "none";
-
+    
     engine
-      .parseAndRender(this.inputTarget.innerHTML, liquid_data)
-      .then(html => this.outputTarget.innerHTML = html)
+      .parseAndRender(this.element.innerHTML, liquid_data)
+      .then(html => this.element.innerHTML = html)
   }
 }

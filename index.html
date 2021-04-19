@@ -4,25 +4,25 @@
     <title>Playground</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/subcre8r/tailwind/css-dist/tailwind.min.css">
     <script>
-      var data = {
-      "name": "liquid",
-      "test": [
-        "hey",
-        "world",
-        "foo",
-        "bar"
-      ]
-    };
+      var liquid_data = {
+        "name": "liquid",
+        "test": [
+          "hey",
+          "world",
+          "foo",
+          "bar"
+        ]
+      };
     </script>
     <script src="./dist/stimulus.min.js"></script>
   </head>
   <body class="m-12">
 
     <div data-controller="liquid">
-      <div class="" data-liquid-target="input">
-        <h1 class="text-xl">what up {{test[3]}}</h1>
-      </div>
-      <div data-liquid-target="output"></div>
+      something
+      {% for t in test %}
+        <h1 class="text-xl">{{t}}</h1>
+      {% endfor %}
     </div>
 
     <div class="bg-red-50 h-screen" data-controller="hello classer">
