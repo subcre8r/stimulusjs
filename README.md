@@ -12,6 +12,12 @@ Copy & paste to header section of your HTML
 <script src="https://cdn.jsdelivr.net/gh/subcre8r/stimulusjs/dist/stimulus.min.js"></script>
 ```
 
+# If you want to test it out locally
+```bash
+npm install -g live-server
+live-server
+```
+
 ## If you decide to modify, don't forget to
 ```bash
 npx webpack
