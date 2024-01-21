@@ -20,7 +20,7 @@ live-server
 
 ## If you decide to modify, don't forget to
 ```bash
-npx webpack
+nvm use 14.17.0;npx webpack
 ```
 
 # Maranatha!
